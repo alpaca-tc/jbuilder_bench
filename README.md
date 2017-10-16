@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+```
+# Create posts and comments
+100.times do
+  post = Post.new
+  10.times { post.comments.build }
+  post.save!
+end
+```
