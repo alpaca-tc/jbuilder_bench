@@ -1,4 +1,4 @@
-class Api::V1::OptimizedPostsController < Api::ApplicationController
+class Api::OptimizedPostsController < Api::ApplicationController
   def index
     @posts = Post.preload(:comments)
   end
